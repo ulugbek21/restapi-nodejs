@@ -34,7 +34,6 @@ app.get("/:carName", (req, res) => {
 
 app.post("/create", (req, res) => {
     var keys = Object.keys(req.body)
-    console.log(req.body)
     for (let i = 0; i < keys.length; i++) {
         var key = keys[i]
         var body = req.body[key]
